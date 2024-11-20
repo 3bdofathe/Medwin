@@ -1,0 +1,735 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --bluecolor: #0cb7d6;
+
+}
+
+/* start a header */
+.head{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/banner-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.head .info{
+    height: 9vh;
+    background-color: var(--bluecolor);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.head .info a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: .5s linear;
+}
+.head .info a:hover{
+    color: black;
+}
+.head .nav{
+    /* border: solid; */
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.head .contain{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.head .contain .mid{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--bluecolor);
+    flex-grow: 20;
+}
+.head .contain .me-auto{
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+}
+.head .contain .alink{
+    color: var(--bluecolor);
+    margin-left: 20px;
+    transition: .5s linear;
+}
+.head .contain .alink:hover{
+    color: white;
+}
+
+.head .txt{
+    width: 50%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+.head .txt h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.head .txt p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.head .txt button{
+    width: 200px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--bluecolor);
+    border: none;
+    border-radius: 8px;
+    transition: .5s linear;
+}
+.head .txt button:hover{
+    background-color: white;
+    color: black;
+}
+@media (max-width: 1200px){
+    .head .txt{
+        width: 70%;
+    }
+}
+@media (max-width: 768px){
+    .head .txt{
+        width: 85%;
+    }
+    .head .info{
+        display: none;
+    }
+}
+/* end header */
+/* start a section booking */
+.booking{
+    width: 100%;
+    position: relative;
+    top: -170px;
+
+}
+.booking .book{
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    padding: 45px 30px 40px 30px;
+    box-shadow: 1px 1px 15px gray;
+}
+.booking .book h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}  
+.booking .book .book1{
+    display: flex;
+    justify-content: space-between;
+    opacity: .8;
+}
+.booking .book .book1 .col1{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+}
+.booking .book .book1 .col1 label{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.booking .book .book1 .col1 input, select{
+    width: 100%;
+    padding: 15px;
+
+}
+.booking .book .book2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booking .book .book2 button{
+    width: 150px;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--bluecolor);
+    border: none;
+    border-radius: 8px;
+    transition: .5s linear;
+}
+.booking .book .book2 button:hover{
+    background-color: rgb(63, 148, 174);
+    color: rgb(40, 40, 40);
+}
+@media (max-width: 1300px){
+    .booking .book{
+        width: 80%;
+    }
+}
+@media (max-width: 1100px){
+    .booking .book{
+        width: 87%;
+    }
+}
+@media (max-width: 768px){
+    .booking .book{
+        width: 80%;
+    }
+    .booking .book .book1{
+        flex-wrap: wrap;
+    }
+    .booking .book .book1 .col1{
+        width: 100%;
+    }
+    .booking .book h1{
+        font-size: 2rem;
+    }
+}
+/* end a section booking */
+/* start a section about */
+.about{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.about .col2{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about  .col2 h1{
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.about  .col2 p{
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: .7;
+    margin-bottom: 40px;
+}
+.about  .col2 button{
+    width: 160px;
+    padding: 13px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.855);
+    border: none;
+    border-radius: 5px;
+    transition: .5s linear;
+}
+.about  .col2 button:hover{
+    background-color: var(--bluecolor);
+    color: white;
+}
+@media (max-width: 1300px){
+    .about{
+        width: 80%;
+    }
+}
+@media (max-width: 1100px){
+    .about{
+        width: 90%;
+    }
+}
+@media (max-width: 768px){
+    .about{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .about .col2{
+        width: 100%;
+        margin-bottom: 40px;
+    } 
+}
+/* end a section about */
+
+/* start a section treatment */
+.treat{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.treat .h1{
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.treat .part{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+.treat .part .col3{
+    width: 23%;
+}
+.treat .part .col3 h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+    opacity: .9;
+}
+.treat .part .col3 h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.treat .part .col3 p{
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: .8;
+    margin-bottom: 30px;
+}
+.treat .part .col3 button{
+    width: 170px;
+    padding: 13px;
+    background: none;
+    border: 1px solid black;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: .5s linear;
+}
+.treat .part .col3 button:hover{
+    border: 1px solid var(--bluecolor);
+    color: var(--bluecolor);
+}
+@media (max-width: 1300px){
+    .treat{
+        width: 80%;
+    }
+}
+@media (max-width: 1150px){
+    .treat{
+        width: 80%;
+    }
+    .treat .part{
+        flex-wrap: wrap;
+    }
+    .treat .part .col3{
+        width: 45%;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 600px){
+    .treat{
+        width: 85%;
+    }
+    .treat .part{
+        flex-wrap: wrap;
+    }
+    .treat .part .col3{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .treat .h1{
+        font-size: 2.1rem;
+    }
+}
+/* end a section treatment */
+/* start a section doctors */
+.doctor{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    background-color: #1a3237;
+    border-radius: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.doctor h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.doctor .doc {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: var(--bluecolor);
+}
+.doctor .doc .col4{
+    position: relative;
+    width: 31%;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 40px;
+}
+.doctor .doc .col4 img{
+    /* position: absolute; */
+    margin-top: -30px;
+}
+.doctor .doc .col4 h2{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.doctor .doc .col4 h3{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.doctor .doc .col4 .doc-icon{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 1.4rem;
+    margin-top: 15px;
+    cursor: pointer;
+    color: black;
+    
+}
+.doctor .doc .col4 .doc-icon i{
+    transition: .5s linear;
+}
+.doctor .doc .col4 .doc-icon i:hover{
+    color: var(--bluecolor);
+}
+@media (max-width: 1300px){
+    .doctor .doc{
+        width: 80%;
+    }
+}
+@media (max-width: 1100px){
+    .doctor .doc{
+        width: 85%;
+    }
+}
+@media (max-width: 920px){
+    .doctor .doc{
+        width: 90%;
+    }
+}
+@media (max-width: 768px){
+    .doctor .doc{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .doctor .doc .col4{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .doctor h1{
+        font-size: 2.5rem;
+    }
+    .doctor{
+        border-radius: 70px;
+    }
+}
+/* end a section doctors */
+/* start a section Testimonial */
+.test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+.test h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.test .test1{
+    width: 60%;
+    margin: auto;
+    padding: 35px;
+    box-shadow: 1px 1px 15px gray;
+}
+.test .test1 .tee{
+    display: flex;
+    justify-content: space-between;
+}
+.test .test1 .tee h5{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0cb7d6;
+    margin-bottom: 15px;
+}
+.test .test1 p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: gray;
+}
+@media (max-width: 1300px){
+    .test .test1{
+        width: 70%;
+    }
+}
+@media (max-width: 1100px){
+    .test .test1{
+        width: 80%;
+    }
+}
+@media (max-width: 920px){
+    .test .test1{
+        width: 90%;
+    }
+}
+/* end a section Testimonial */
+/* start a section Testimonial */
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.contact .con{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contact .con .col5{
+    width: 50%;
+}
+.contact .con .text{
+    padding-left: 100px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    opacity: .8;
+}
+.contact .con .text input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: gray;
+}
+.contact .con .text textarea{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: gray;
+}
+.contact .con .text button{
+    width: 200px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: .5s linear;
+    background-color: var(--bluecolor);
+    border: none;
+}
+.contact .con .text button:hover{
+    background-color: rgb(23, 23, 23);
+}
+
+@media (max-width: 1100px){
+    .contact .con .text{
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 800px){
+    .contact .con{
+        flex-wrap: wrap;
+    }
+    .contact .con .col5{
+        width: 100%;
+    }
+    .contact .con .text{
+        margin-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+/* end a section Testimonial */
+/* start a section footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.894);
+    color: white;
+    flex-direction: column;
+}
+.footer .foot{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .foot .col6{
+    width: 24%;
+}
+.footer .foot .aaa i{
+    font-size: 1.3rem;
+    margin-top: 7px;
+    margin-right: 15px;
+    color: #0cb7d6;
+}
+.footer .foot .aaa h1{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.footer .foot .add a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin-bottom: 13px;
+    transition: .5s linear;
+}
+.footer .foot .add a i{
+    margin-top: 4px;
+}
+.footer .foot .add a h6{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.footer .foot .add a:hover{
+    color: #0cb7d6;
+}
+.footer .foot .add .icon2{
+    width: 70%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .foot .add .icon2 i{
+    cursor: pointer;
+    color: #0cb7d6;
+    transition: .5s linear;
+}
+.footer .foot .add .icon2 i:hover{
+    color: white;
+}
+
+.footer .foot .use .links{
+    display: flex;
+    flex-direction: column;
+
+}
+.footer .foot .use .links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 7px;
+    transition: .5s linear;
+}
+.footer .foot .use .links a:hover{
+    color: #0cb7d6;
+}
+.footer .foot .help p{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.footer .foot .new1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer .foot .new1 p{
+    margin-left: 15px;
+    font-size: 1.1rem;
+}
+@media (max-width: 1300px){
+    .footer .foot{
+        width: 80%;
+    }
+    .footer .foot .aaa h1{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 1200px){
+    .footer .foot{
+        width: 90%;
+    }
+    .footer .foot .aaa h1{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 1100px){
+    .footer .foot{
+        width: 95%;
+    }
+}
+@media (max-width: 1000px){
+    .footer .foot{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .footer .foot .col6{
+        width: 40%;
+        margin-bottom: 50px;
+    }
+    
+}
+@media (max-width: 600px){
+    .footer .foot{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .footer .foot .col6{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .footer .foot .add .icon2{
+        width: 50%;
+    }
+}
+/* end a section footer */
+.end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.end p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 9px;
+}
+.end a{
+    text-decoration: none;
+    color: brown;
+    transition: .5s linear;
+    font-weight: bold;
+}
+.end a:hover{
+    color: black;
+}
